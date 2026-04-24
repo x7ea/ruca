@@ -1,0 +1,7 @@
+fn main() {
+    let a = 1 + 2
+    let b = 3.14
+    let c = "Hello"
+    let d = true | false
+    printf("%d ~ %lf: %s, %s\n", a, b, c, if d then "true" else "false")
+}

@@ -1,0 +1,21 @@
+type Box { raw: T, id: Int }
+
+fn showId(this: Box) {
+    printf("- Box id = %ld\n", this.id)
+}
+
+fn main() {
+    let a = new Box@Float
+    let a.id = 9001
+    let a.raw = 3.14
+
+    printf("%lf\n", a.raw)
+    showId(a)
+
+    let b = new Box@Str
+    let b.id = 9002
+    let b.raw = "Hello"
+
+    printf("b = %s\n", b.raw)
+    showId(b)
+}

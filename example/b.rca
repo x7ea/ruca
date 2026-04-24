@@ -1,0 +1,2 @@
+fn half(n: Float) n / 2.0
+fn main() printf("%lf\n", half(3.14))

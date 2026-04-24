@@ -1,0 +1,16 @@
+fn inc(n: Int) n + 1
+fn dup(n: Int) n * 2
+
+fn apply(lambda: Int(Int), arg: Int) lambda(arg)
+
+fn main() {
+    let x = 5
+
+    let f = inc
+    let y = apply(f, x)
+    printf("0: %d\n", y)
+
+    let f = dup
+    let y = apply(f, x)
+    printf("1: %d\n", y)
+}

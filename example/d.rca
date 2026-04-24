@@ -1,0 +1,21 @@
+type List { car: Int, cdr: List }
+
+fn node(value: Int) {
+    let this = new List
+    let this.car = value
+    this
+}
+
+fn link(this: List, other: List) {
+    while this.cdr? do let this = this.cdr
+    let this.cdr = other
+}
+
+fn main() {
+    let a = node(100)
+    let b = node(200)
+    let c = node(300)
+    link(link(a, b), c)
+
+    printf("%ld\n", a.cdr.cdr.car)
+}
