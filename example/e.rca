@@ -1,7 +1,7 @@
 type Box { raw: T, id: Int }
 
 fn showId(this: Box) {
-    printf("- Box id = %ld\n", this.id)
+    printf("\tBox id = %ld\n", this.id)
 }
 
 fn main() {
