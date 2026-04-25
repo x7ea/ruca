@@ -265,6 +265,7 @@ impl Expr {
             }
             Expr::String(value) => {
                 let value = format!("{value}, 0")
+                    .replace("\\t", "\", 9, \"")
                     .replace("\\n", "\", 10, \"")
                     .replace("\\\"", "\", 34, \"")
                     .replace("\"\", ", "");
